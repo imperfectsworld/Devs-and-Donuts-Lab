@@ -1,0 +1,23 @@
+
+<h1> <button (click) = "toggleDisplay()">Switch Views</button></h1>
+@if(display === true)
+{
+    <h1>DONUTS</h1>
+@for(p of donutResult.results; track $index){
+    <ol start="{{p.id}}">
+        <li>{{p.name}}</li>
+        <a href = "{{p.photo_attribution}}">
+         <img class = "donutPics" src = "{{p.photo}}"> 
+     </a> 
+    </ol>
+}
+
+}
+
+@else {
+    <app-famous-people> </app-famous-people>
+}
+
+
+
+

@@ -1,0 +1,25 @@
+<h1 class = "Title">FAMOUS PEOPLE</h1>
+
+<table class = "cTable">
+
+    <tr>
+        <th>F.Name</th>
+        <th>L.Name</th>
+        <th>Innovation</th>
+        <th>Year</th>
+    </tr>
+
+    @for(p of hofResult.complete; track $index){
+        
+    <tr>
+        <td>{{p.firstName}}</td>
+        <td>{{p.lastName}}</td>
+        <td>{{p.innovation}}</td>
+        <td>{{p.year}}</td>
+    </tr>
+    }
+
+
+
+
+</table>
